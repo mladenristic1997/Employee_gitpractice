@@ -3,32 +3,30 @@ package person_classes;
  * extends person
  * has office, salary and date hired
  */
-public class Employee {
-	
-	private String name;
+public class Employee extends Person{
+
 	private String office;
 	private double sallary;
 	private String date;
 	
-	
-	public Employee() {
+	public Employee(){
 		
 	}
 
-	public Employee(String name, String office, double sallary, String date) {
-		this.name = name;
-		this.office = office;
+	public Employee(String name, String address, String phoneNumber, String mail, String office, double sallary, String date) {
+		setName(name);
+		setAddress(address);
+		setPhoneNumber(phoneNumber);
+		setMail(mail);
 		this.sallary = sallary;
+		this.office = office;
 		this.date = date;
+		
 	}
 
-	public String getName() {
-		return name;
-	}
+	
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	
 
 	public String getOffice() {
 		return office;

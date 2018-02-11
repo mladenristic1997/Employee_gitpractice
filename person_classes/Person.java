@@ -14,12 +14,6 @@ public class Person {
 	private String phoneNumber;
 	private String mail;
 	
-	public Person(String name, String address, String phoneNumber, String mail){
-		this.name = name;
-		this.address = address;
-		this.phoneNumber = phoneNumber;
-		this.mail = mail;
-	}
 
 	public String getName() {
 		return name;
