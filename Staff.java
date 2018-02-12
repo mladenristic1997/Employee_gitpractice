@@ -7,31 +7,31 @@ public class Staff extends Person {
 	
 	private String title;
 	
-	public Staff(String title, String name, String address, String phoneNumber, String mail) {
-		super(name, address, phoneNumber, mail);
-		this.title = title;
-		
-	}
+	
+	
+public Staff() {
+	
+}
 
-	/**
-	 * @return the title
-	 */
-	public String getTitle() {
-		return title;
-	}
+public Staff(String title, String name) {
+	this.title = title;
+	setName(name);
+}
 
-	/**
-	 * @param title the title to set
-	 */
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	
-	@Override
-	public String toString() {
-		return "" + this.getClass() + "\nName: " + getName() + "\n";
-	}
-	
-	
+public String getTitle() {
+	return title;
+}
+
+public void setTitle(String title) {
+	this.title = title;
+}
+
+
+
+
+
+public String toString(){
+	return "Staff class " + Staff.class + " title: " + getTitle() + " Staff name: " + getName();
+}
 
 }

@@ -20,6 +20,9 @@ public class Person {
 		this.phoneNumber = phoneNumber;
 		this.mail = mail;
 	}
+	public Person() {
+		
+	}
 
 	public String getName() {
 		return name;
